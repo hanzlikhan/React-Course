@@ -1,11 +1,9 @@
-function AddItem2() {
-  var itemName = "Go to College";
-  var date = "16/07/2024";
+function TodoItem({ todoName, todoDate }) {
   return (
     <div className="container">
       <div className="row kg-row">
-        <div className="col-6">{itemName}</div>
-        <div className="col-4">{date}</div>
+        <div className="col-6">{todoName}</div>
+        <div className="col-4">{todoDate}</div>
         <div className="col-2">
           <button type="button" className="btn btn-danger kg-button">
             Delete
@@ -15,4 +13,5 @@ function AddItem2() {
     </div>
   );
 }
-export default AddItem2;
+
+export default TodoItem;
