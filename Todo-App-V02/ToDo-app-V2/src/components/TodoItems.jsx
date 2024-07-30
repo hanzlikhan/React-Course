@@ -1,14 +1,13 @@
 import TodoItem from "./TodoItem";
 import styles from "./TodoItems.module.css";
 
-const TodoItems = ({ todoItems }) => {
+const ItemList = ({ items }) => {
   return (
-    <div className={styles.itemsContainer}>
-      {todoItems.map((item) => (
-        <TodoItem todoDate={item.dueDate} todoName={item.name}></TodoItem>
+    <ul>
+      {items.map((item, index) => (
+        <li key={index}>{item}</li>
       ))}
-    </div>
+    </ul>
   );
 };
 
-export default TodoItems;
