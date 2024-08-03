@@ -1,7 +1,7 @@
 import TodoItem from "./TodoItem";
 import styles from "./TodoItems.module.css";
 
-const ItemList = ({ items }) => {
+const ItemList = ({  }) => {
   return (
     <ul>
       {items.map((item, index) => (
